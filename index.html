@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Archivo HTML con JavaScript</title>
+  <style>
+     body {
+      background-color: black;
+    }
+    #nombre {
+      color: blue;
+      font-size: 250px
+    }
+  </style>
+  <script>
+    setInterval(function() {
+      var colors = ["red", "green", "blue", "orange", "purple"];
+      var randomColor = colors[Math.floor(Math.random() * colors.length)];
+      document.getElementById("nombre").style.color = randomColor;
+    }, 1000);
+  </script>
+</head>
+<body>
+
+  <center><p id="nombre">Ivan Alejandro</p></center>
+
+</body>
+</html>
